@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Videos - SecureStream</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SecureStream</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="videos.html" class="active">Videos</a></li>
+                    <li><a href="dashboard.html" id="dashboardLink">Dashboard</a></li>
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="container">
+                <h2>Available Videos</h2>
+                
+                <div class="videos-section">
+                    <div id="publicVideosList" class="videos-list">
+                        <!-- Public videos will be loaded here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SecureStream. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/videos.js"></script>
+</body>
+</html>

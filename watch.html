@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Video - SecureStream</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SecureStream</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html" id="dashboardLink">Dashboard</a></li>
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="video-player">
+            <div class="container">
+                <h2 id="videoTitle">Video Title</h2>
+                <div class="player-container">
+                    <video id="secureVideo" controls controlsList="nodownload" oncontextmenu="return false;">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="protection-overlay"></div>
+                </div>
+                <div class="video-info">
+                    <p id="videoDescription">Video description will appear here.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SecureStream. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/player.js"></script>
+    <script src="scripts/content-protection.js"></script>
+</body>
+</html>
